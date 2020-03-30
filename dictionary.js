@@ -1,10 +1,10 @@
 const Glossary = require("./glossary.js");
+const Images = require("./images");
 
 //TODO: remover acentos das palavras
-//TODO: pegar mais palavras ao invés de uma apenas
 //TODO: estudar predição de erros
 function matchMeaning(args) {
-  let arg = args[0].toUpperCase();
+  let arg = args.join(" ").toUpperCase();
   switch (arg) {
     case "MANA":
       return Glossary.General.Mana;
@@ -45,7 +45,11 @@ function matchMeaning(args) {
 
     /* Races */
     case "HUMANO":
-      return Glossary.Races.Humano;
+      const message = {
+        text: Glossary.Races.Humano,
+        img: Images.Races.HumanoSulista
+      };
+      return message;
     case "ORC":
       return Glossary.Races.Orc;
     case "LIZARDIO":

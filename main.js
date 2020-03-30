@@ -3,7 +3,6 @@ const Discord = require("discord.js");
 require("dotenv").config();
 
 /* External files */
-const Glossary = require("./glossary.js");
 const matchMeaning = require("./dictionary.js");
 
 const client = new Discord.Client();
@@ -13,21 +12,32 @@ client.on("ready", () => {
 client.on("message", msg => {
   if (msg.content.substring(0, 1) == "!") {
     let args = msg.content.substring(1).split(" ");
-    let cmd = args[0]; // get the command (first word)
-    args = args.splice(1); // get every args after the command into a list
+    let cmd = args[0];
+    args = args.splice(1);
+    let msgEmbed = new Discord.MessageEmbed();
 
+    //console.log("msg", msg);
     if (cmd === "dict") {
       let response = matchMeaning(args);
-      msg
-        .reply(response)
-        .then(() => console.log(`Sent a reply to ${msg.author.username}`))
-        .catch(console.error);
+      if (response.img) {
+        // here we have a text with an image
+        msgEmbed.setImage(response.img);
+        msg.channel
+          .send(response.text, msgEmbed)
+          .then(() => console.log(`Sent a reply to ${msg.author.username}`))
+          .catch(console.error);
+      } else {
+        // here we have just a text
+        msg.channel
+          .send(response)
+          .then(() => console.log(`Sent a reply to ${msg.author.username}`))
+          .catch(console.error);
+      }
     }
-    if (msg.content === "ping") {
+    if (msg.content === "!ping") {
+      msg.channel.send("teste", msgEmbed);
       msg.reply("Pong!");
     }
   }
 });
 client.login(process.env.BOT_TOKEN);
-
-//dict mana
