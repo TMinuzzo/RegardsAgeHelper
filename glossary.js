@@ -5,6 +5,43 @@ const Glossary = {
     MageSorcerer:
       "É considerado um “Feiticeiro” aquele que nasceu com o dom de utilizar feitiços arcanos, independente de possuir alguma habilidade com o domínio das gemas. “Mago”, entretanto é aquele que consegue lançar magias através de seu controle das gemas elementares, e pode ou não ser um feiticeiro ao mesmo tempo."
   },
+  Attributes: {
+    Constituicao:
+      " Capacidade de suportar o cansaço até a exaustão. Resistência biológica a doenças, venenos e intoxicações. Pessoas de grande porte costumam ter uma constituição maior, e vice versa.",
+    Forca: "Massa muscular é considerada como um todo, se alguém tem força alta, então isso se aplica a todos os músculos do corpo.",
+    Destreza: " Ter músculos é uma coisa, saber usá-los é outra. Afeta coordenação motora, agilidade e perícia, especialmente com aquilo que envolve as mãos.",
+    Esquiva:
+      "Enquanto a destreza envolve mais agilidade com as mãos, pode-se dizer que esquiva envolve mais a agilidade com o corpo inteiro. Reflexo é sempre dependente da esquiva.",
+    PoderMagico:
+      " É como a “força” no uso da magia, o “músculo mágico”. Poder mágico envolve a intensidade/quantidade de magia que uma pessoa consegue exercer em uma conjuração",
+    ManipulacaoMagica:
+      "É como a “destreza” no uso da magia. O quão bem e com quanta precisão uma magia é conjurada depende deste atributo. Quando uma magia é realizada com uma intensidade trivial para aquele indivíduo, a manipulação mágica é o principal fator para definir o quão bem ela é feita.",
+    Cautela: "Quando há algum sinal de perigo/emergência e a pessoa precisa prestar muita atenção nos seus arredores para não ser surpreendida.",
+    Perspicacia:
+      "Capacidade da pessoa de analisar as minúcias do ambiente, dos objetos e das pessoas em sua presença, tentando notar detalhes que não são óbvios a primeira vista.",
+    Discricao: " O quão discreta uma pessoa consegue ser quando ela está intencionalmente tentando ser discreta.",
+    Extravagancia: "O quanto uma pessoa consegue ser chamativa, atraindo todos os olhares para si, quando ela está intencionalmente tentando ser chamativa.",
+    Resiliencia:
+      "A resistência mental de uma pessoa. O quanto uma pessoa é afetada por dores emocionais e eventos trágicos. Em momentos de tensão, terror e desespero, como o psicológico da pessoa é afetado depende de sua resiliência."
+  },
+  Races: {
+    Humano:
+      "Iguais aos Humanos da vida real. Em aparência, há uma grande diversidade entre os humanos: nas ilhas de Sanichini eles são como asiáticos, cada ilha tendo suas peculiaridades, em San eles são 'japoneses', em Ichi são 'Filipinos' e em Ni são 'chineses'. No reino de Zardien os humanos são em sua maioria negros, com variadas tonalidades de cor de pele ao longo de todo reino. Em Northlön são quase todos de aparência mais 'europeia', embora haja também muitas pessoas de pele escura especialmente em alguns reinos ao sul do continente.",
+    Orc:
+      "A maioria dos orcs possuem pele branca, um pouco acinzentada, e em alguns locais há variações de pele mais esverdeada, estes costumam ser ditos por 'abençoados pela natureza' e há diferentes interpretações culturais no significado de um orc com essa cor. 'Abençoados pela natureza' pode ser considerado tanto como uma maldição quanto um presságio de uma pessoa com um futuro importante ou um futuro trágico. Orcs mestiços com humanos podem ter pele marrom ou cinza escuro, e estes são vistos com muito preconceito por outros orcs. A massa muscular de um orc tende a ser muito maior do que a de um humano mediano, mas nem todos são tão fortes, apenas sua média é bem maior. Embora alguns fofoquem a respeito da falta de inteligência de um orc, em geral isso não é verdade e eles são tão capazes quanto humanos em assuntos intelectuais, porem sua produção tecnológica não é tão avançada e geralmente mais voltada para a guerra. Além disso, orcs são uma das raças com a menor qualidade de educação sobre magia, tendo somente uma universidade entre todos seus clãs, então é mais incomum encontrar algum com muita proficiência no assunto.",
+    Lizardio:
+      "Sua aparência lembra muito lagartos, olhos reptilianos, língua comprida e bifurcada, adoram se banhar no sol, são esguios e possuem uma longa e hábil cauda. Porém lizardios são também muito conhecidos por sua pele escamada, que confere a eles uma resistência física natural maior do que todas as outras raças civilizadas. Dito isto, por baixo de suas escamas Lizardios tem uma carne mole e mais frágil do que os humanos, tornando escamas quebradas um ponto fraco letal. Lizardios podem ter chifres de muitos formatos diferentes, e muitos nem tem, mas em geral seus chifres são curtos. As escamas dos lizardios os conferem uma grande resistência aos raios do sol, mas depois de dias de insolação eles adoram ficar de molho em água morna por horas para se hidratar. ",
+    Underall:
+      "São pequenos, em torno de 1,20m, e possuem uma clara e frágil pele que se queima fácil contra o sol, criando bolhas e inflamando. Ao longo de suas costas corcundas, nuca, antebraço e no topo da cabeça possuem uma camada de exoesqueleto que é um couro muito resistente, fruto de má formação em seus corpos artificiais que foram criados em laboratório. Possuem pelo corpo alguns poucos pelos espalhados, especialmente no rosto e seus braços e pernas são magros e ágeis, além de seu corpo ser bem leve. Underall não gostam de sol e por isso vivem majoritariamente embaixo da terra, saindo para a rua somente cobertos com longos mantos e capuzes, a não ser em algumas partes de maior latitude do mundo onde o sol é mais tolerável. Sua alimentação é baseada em cogumelos, insetos, minhocas e alguns outros tipos de plantas, mas são onívoros e podem comer quase qualquer comida estrangeira, com exceção de carnes gordurosas que são muito difíceis de digerir. Sua destreza manual e conhecimento técnico é muito maior do que a maioria. Algumas pessoas dizem que underall se parecem com ratos bípedes... mas eles não gostam nada desta comparação.",
+    Griffin: "",
+    Songster: "",
+    Halfling: "",
+    Telno:
+      "Criaturas consideradas muito diferentes e esquisitas pela maioria das raças civilizadas, pois são polvos muito inteligentes que vestem roupas e caminham como humanoides. seus 10 tentáculos são frágeis e se dividem em 4 membros para melhorar sua destreza manipulando objetos e caminhando para se parecerem mais 'bípedes'. O verdadeiro habitat de um telno é no fundo do mar, onde sua agilidade é imensa e podem nadar em alta velocidade, mas os telnos 'caminhantes' que nasceram e viveram toda suas vidas na terra firme estão acostumados a caminhar como outras raças. Sua habilidade manuseando objetos é bem diferente, considerando que seus tentáculos podem grudar fortemente em objetos, mas sua força física não é muito grande. A sucção proveniente dos tentáculos também permite aos telnos escalarem paredes e até se pendurarem no teto, com mais facilidade quando não estão usando roupas, mas obviamente este tipo de comportamento não é comum. Embora consigam respirar fora da água, o corpo dos telnos é muito dependente de água para não ficarem ressecados e desidratados, necessitando longos banhos e muita ingestão de líquidos. A cor da pele dos telnos é azul escuro, mas todos possuem capacidade de se camuflarem, mudando suas cores, embora só consigam escolher uma única cor para o corpo inteiro, ou seja, não é possível se camuflar perfeitamente formando padrões diferentes de cores e texturas ao longo do corpo. Um telno macho e fêmea são extremamente difíceis de se diferenciar e normalmente só um telno consegue perceber a diferença, causando muita confusão nas outras raças por não saberem qual pronome usar, mas os telnos não se importam realmente com isso visto que sua cultura não diferencia homens e mulheres a não ser por motivos sexuais. O segredo para diferenciar os sexos está em um dos tentáculos do 'braço', geralmente o direito, que possue a ponta em um formato de 'pá', um pouco diferente dos outros.",
+    Raven: "",
+    Dragao: ""
+  },
+
   Plants: {
     Flouren:
       " Cogumelo verde fluorescente que cresce em locais escuros e profundos, não é comestível e costuma atrair insetos para sua luz. Originalmente Flourens eram raros e desconhecidos por todo o mundo, até que os underall o encontraram em uma caverna subterrânea muito profunda junto de formigas de lava. Após replantarem muitas vezes estes cogumelos, depois de séculos ele se tornou conhecido no mundo todo e uma ferramenta de iluminação padrão nas cidades subterrâneas do território underall. ",

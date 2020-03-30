@@ -1,5 +1,8 @@
 const Glossary = require("./glossary.js");
 
+//TODO: remover acentos das palavras
+//TODO: pegar mais palavras ao invés de uma apenas
+//TODO: estudar predição de erros
 function matchMeaning(args) {
   let arg = args[0].toUpperCase();
   switch (arg) {
@@ -11,6 +14,46 @@ function matchMeaning(args) {
     case "FEITICEIRO":
     case "FEITICEIROS":
       return Glossary.General.MageSorcerer;
+
+    /* Attributes */
+    case "CONSTITUICAO":
+    case "CONSTITUIÇAO":
+      return Glossary.Attributes.Constituicao;
+    case "FORCA":
+    case "FORÇA":
+      return Glossary.Attributes.Forca;
+    case "DESTREZA":
+      return Glossary.Attributes.Destreza;
+    case "ESQUIVA":
+      return Glossary.Attributes.Esquiva;
+    case "PODER MAGICO":
+      return Glossary.Attributes.PoderMagico;
+    case "MANIPULACAO MAGICA":
+    case "MANIPULAÇAO MAGICA":
+      return Glossary.Attributes.ManipulacaoMagica;
+    case "CAUTELA":
+      return Glossary.Attributes.Cautela;
+    case "PERSPICACIA":
+      return Glossary.Attributes.Perspicacia;
+    case "DISCRICAO":
+    case "DISCRIÇAO":
+      return Glossary.Attributes.Discricao;
+    case "EXTRAVAGANCIA":
+      return Glossary.Attributes.Extravagancia;
+    case "RESILIENCIA":
+      return Glossary.Attributes.Resiliencia;
+
+    /* Races */
+    case "HUMANO":
+      return Glossary.Races.Humano;
+    case "ORC":
+      return Glossary.Races.Orc;
+    case "LIZARDIO":
+      return Glossary.Races.Lizardio;
+    case "UNDERALL":
+      return Glossary.Races.Underall;
+    case "TELNO":
+      return Glossary.Races.Telno;
 
     /* Plants */
     case "FLOUREN":
