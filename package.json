@@ -1,0 +1,19 @@
+{
+    "name": "RegardsAgeHelper",
+    "version": "1.0.0",
+    "description": "A discord bot with some helper functionalities about the Regards Age system",
+    "main": "main.js",
+    "scripts": {
+        "start": "node main.js",
+        "dev": "nodemon main.js"
+      },
+    "author": "Thayna Minuzzo",
+    "dependencies": {
+        "discord.io": "^2.5.3",
+        "discord.js": "^12.1.1",
+        "winston": "^3.2.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.2"
+    }
+}
