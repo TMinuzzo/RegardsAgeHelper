@@ -87,7 +87,232 @@ const Glossary = {
       AuraDeEnergia:
         "Uma energia arcana que parece com fogo envolve todo o corpo do lançador durante 4 rodadas. Se durante esse tempo ele for atingido por um ataque físico, a energia arcana se jogará contra o atacante para empurrá-lo para longe e desequilibrá-lo.",
       ChuvaDeDestruicao:
-        "Dispara, a partir de suas mãos, 5 lasers de energia arcana que causam cortes profundos e penetrantes. Pode mirar em vários alvos ao mesmo tempo, dentro de 5 metros, em qualquer direção. Aumenta/diminui em 1 o número de disparos para cada ponto de Poder Mágico. O dano de cada corte é consideravelmente grande, mas são difíceis de acertar."
+        "Dispara, a partir de suas mãos, 5 lasers de energia arcana que causam cortes profundos e penetrantes. Pode mirar em vários alvos ao mesmo tempo, dentro de 5 metros, em qualquer direção. Aumenta/diminui em 1 o número de disparos para cada ponto de Poder Mágico. O dano de cada corte é consideravelmente grande, mas são difíceis de acertar.",
+      ForcaAtrativa:
+        "O lançador e um outro alvo escolhido são imediatamente teleportados para ficarem a um metro de distância um do outro (ambos são teleportados até um ponto entre eles equidistante de sua localização anterior). Sempre acerta. Precisa estar a no máximo 5 metros do alvo para funcionar. ",
+      ContraFeitico:
+        "Cancela um feitiço ou efeito mágico que está sobre conjuração ou que esteja afetando alguma entidade. A maneira como funciona é desmanchando a manipulação de um feitiço existente ou bloqueando e espalhando os conduítes de mana no corpo de uma pessoa enquanto ela tenta manipular sua mana para fazer algo. Também pode ser usado para desmanchar objetos arcanos conjurados, porém é bem difícil de fazer de maneira rápida se eles estiverem em movimento.",
+      EmaranhadoMagico:
+        "Conecta uma parte de seu corpo a alguém ou alguma coisa, criando uma ligação que gruda os dois, como se estivessem amarrados ou presos um no outro. O feitiço precisa ser canalizado para continuar funcionando e só funciona ao toque. Com um pouco mais de dificuldade, você pode também tentar grudar dois objetos/pessoas ao invés de você se grudar. A tensão suportada pelo emaranhado é aproximadamente do peso de uma pessoa, então é possível se pendurar em um teto com o feitiço.",
+      DesprenderEspirito:
+        "Um estado de meditação que permite o feiticeiro desprender a alma de seu corpo para vagar pelo mundo espiritual, enxergar e conversar com outros espíritos presentes. Seu corpo é deixado para trás, pálido, sem batimentos ou respiração, como se estivesse morto. O sangue para de bombear pela duração, o que significa que os orgãos da pessoa vão lentamente parar de funcionar e eventualmente morrer, tornando o feitiço irreversível. Se a pessoa ficar fora do corpo por mais de 5 minutos ela sofrerá sequelas permanentes e por mais do que isso danos até piores. Quando a pessoa voltar para seu corpo ficará cansada, enjoada e enfraquecida por algum tempo (o tempo é relativo a quanto seu corpo ficou vazio). Por causa destes severos efeitos colaterais, quem usa este feitiço nunca se arrisca a usá-lo por mais de 1 minuto e vale lembrar que há sempre o risco de, quando tentar voltar para seu corpo, alguém tê-lo movido e você não encontrá-lo. No mundo espiritual, você consegue com muita dificuldade ver e ouvir coisas do mundo material por onde você vaga enquanto as pessoas não te veem, assim como atravessar paredes, etc. Entretanto, sacerdotes e bruxos conseguem sentir sua presença.",
+      FluxoDeMana:
+        "Este feitiço permite ao usuário controlar os movimentos de mana na natureza e em seu corpo, mas há diversas formas de usá-lo dependendo da área de especialização do feiticeiro. Todos os feiticeiros: ao tocar uma pessoa pode transferir a mana do seu corpo para o dela, ou o contrário, desde que ela permita, se ela não permitir será extremamente difícil, mas este feitiço demora bastante tempo para transferir uma quantidade significante de de energia. Bardos: podem tocar uma música que exala parte da mana do feiticeiro para todas as pessoas ou criaturas que ouvem a canção, é forte e eficiente, mas consome muito da mana do bardo. Druidas: entra em um estado de meditação que aumenta enormemente a regeneração de mana do feiticeiro enquanto continuar meditando, absorvendo a mana do ambiente a sua volta. Conjuradores: cria uma orbe de mana flutuante que pode ser consumida por qualquer feiticeiro que tocá-la para revitalizar sua mana, ou então a orbe irá desaparecer depois de várias horas. Rúnicos: pode criar uma sequência de pequenas e simples runas que permitem o fluxo de mana através delas, como uma corrente elétrica, elas podem ser programadas para sugarem a mana de uma ponta e levar para outra ou então serem modificadas para mudar o sentido dinamicamente, estas runas geralmente são usadas em máquinas para restaurar runas que foram desgastadas com o uso. Encantadores: cria um pacto com alguém que aceite este pacto para criar entre os dois um fluxo de transferência de mana constante, viajando de uma pessoa para a outra automaticamente até que o pacto seja quebrado, mas as duas pessoas não podem ficar muito longe uma da outra."
+    },
+    Archmage: {
+      ArenaInterdimensional:
+        "O lançador e outro alvo escolhido (que esteja a no máximo 4 metros) são teleportados para uma sala 5x5x5 toda feita de uma pedra quase indestrutível, que fica em um lugar desconhecido do espaço. Pequenos globos de luz arcana espalhados pela sala iluminam o ambiente. Ambos são teleportados para dois pontos da sala na mesma distância em que estavam antes. Dura 5 rodadas. Apenas quando um dos integrantes morrer ou quando o tempo acabar eles são teleportados de volta para onde estavam. ",
+      Eletrocutar:
+        "Estimula os elétrons de um objeto que você esteja tocando para forçar uma corrente elétrica de um ponto a outro. Se utilizado em pessoas, o choque não costuma ser letal, mas causa fortes contrações espontâneas e deixa a maioria dos inimigos perplexo, sem saber como reagir. Este feitiço consome muita mana, a não ser que seja usada uma versão bem mais fraca do choque."
+    }
+  },
+
+  MusicalSpells: {
+    Starter: {
+      DirecionarSons:
+        "Este é o único feitiço de bardo que não necessita instrumentos musicais. O bardo utiliza de poderes psíquicos para inserir na mente de uma pessoa específica (em um alcance de 10 metros) sons artificiais, imaginados, que o bardo escolher. A pessoa terá noção de que os sons não são reais em sua volta, mas ouvirá eles com muita clareza dentro de sua cabeça, como um pensamento. Este feitiço pode ser utilizado em conjunto com outro feitiço de bardo que normalmente atinge todos em uma área para ao invés disso atingir apenas uma pessoa, sobre o custo de consumir um pouco mais de mana fazendo isso. ",
+      MusicaProfunda:
+        "Incrementa sua música com uma emoção contagiante, a escolha do músico, que tem um impacto psicológico nos sentimentos das pessoas muito maior do que uma música normalmente faria. Pode ser usado para levantar o astral das pessoas, deixá-las tristes, agitadas com adrenalina, românticas, excitadas, contemplativas, alegres, etc.",
+      CordasHipnoticas:
+        "Uma melodia que só pode ser ouvida pelo alvo do feitiço, pois ela entra em sua cabeça. Calma e tranquilizadora, pode adormecê-lo ou só fazê-lo relaxar, dependendo de sua resiliência. Atacar o alvo o acorda.",
+      VibracaoMusical:
+        "Fortes e altos sons causam um tremor capaz de fazer estruturas ruírem. É possível controlar o tremor para que ele aconteça apenas em uma pequena área de alguns metros quadrados, aumentando sua intensidade (quebra brutalmente pedra e madeira, mas apenas entorta um pouco o metal). Alcance de 5 metros",
+      CancaoInspiradora:
+        "Um aliado dentro de 4 metros é abençoado pela canção do bardo durante os próximos segundos, recebendo bônus na rolagem do dado durante as próximas 3 rodadas para realizar qualquer atividade física (bônus de 1 +1 para cada bônus de manipulação mágica que o bardo tem). ",
+      RitmoDescontrolado:
+        "Uma música agitada que força todos aquela que a ouvem (fora o próprio bardo) a ficarem em constante movimento, forçando compulsões involuntárias por todo o corpo que visualmente parece como uma dança frenética (frequentemente usado com esse intuito). Qualquer ação que requer Destreza ou Manipulação Mágica recebe penalidade ( de 1 +1 para cada bônus de poder mágico que o bardo tem).",
+      HarmoniaTranquilizadora:
+        "Todos que conseguem ouvir sua música se sentem acalmados e relaxados. Este feitiço demora algum tempo para fazer efeito, mas seu uso prolongado sem interrupção pode instigar o corpo das pessoas a regenerar suas feridas mais rapidamente, fechando cortes e diminuindo dores, mas não é capaz de curar ferimentos graves a não ser que o bardo tocasse por horas, o que é geralmente impossível para qualquer bardo inexperiente pois consumiria mana demais e seria exaustivo. O feitiço é mais eficiente em uma pessoa em repouso, mas pode ser usado em combate para diminuir a adrenalina das pessoas e diminui a dor que sentem."
+    },
+    Advanced: {
+      SinfoniaDaVerdade:
+        "Faz o alvo contar toda a verdade sobre as perguntas que lhe são feitas, mas só funciona para 3 perguntas, e uma delas com certeza será uma mentira, enquanto as outras duas serão verdade. As perguntas só funcionam se a resposta for algo que o alvo pensa que aquele quem pergunta ainda não sabe. Só é possível usar 1 vez em cada pessoa (criam resistência para a invasão mental).",
+      MelodiaSelvagem:
+        "Uma rápida sequência de notas ensurdecedoras que no final de 3 rodadas dispara um enorme feixe de energia que percorre um raio de 8 metros, causando dano leve e empurrando a todos no caminho, podendo imobilizar por uma rodada dependendo da resiliência do alvo. ",
+      TocarOTerror:
+        "Uma assustadora e ritmada música carregada de magia arcana que afeta todos que são capazes de ouvi-la, fora o lançador. A música causa uma dor de cabeça agonizante em todos que a ouvem, fora o lançador, e a cada rodada que é tocada, a intensidade aumenta. Todos os ataques devem ser feitos em sequência ininterrupta, rodada após rodada, ou não atingirão o clímax da música (depois de 3 rodadas, os ouvidos de todos começam a sangrar e ficam temporariamente surdos). ",
+      MusicaDoSocorro:
+        "Pede ajuda a qualquer animal próximo que ouça a canção para ajudar o bardo a lutar contra seus inimigos. Animais mais poderosos que o bardo geralmente não responderão ao chamado. O bardo não consegue escolher qual animal responderá ao chamado. Este feitiço pode ser modificado pelo bardo para uma versão mais trivial que simplesmente cria uma música agradável aos animais que a ouvem, atraindo eles para assistir o bardo.",
+      CordasMagicas:
+        "Uma agonizante e torturante música invoca vários fios mágicos do chão em volta de um alvo, no máximo a 4 metros, que tentam se prender a seu corpo para estrangulá-lo e prender a circulação de sangue de seus membros. Os fios podem ser arrebentados com força bruta, mas para fazer isso causa ainda mais dor e estrangulamento. Os fios se arrebentam depois de uma rodada. O bardo precisa continuar tocando a música para manipular os fios. "
+    },
+    Archmage: {
+      OrquestraDoVentriloco:
+        "Este feitiço tem um efeito diferente dependendo de qual instrumento é usado para tocá-lo. Se for cantado: ensurdece todos num grande alcance, estourando os tímpanos e pessoas muito próximas ficam tontas e enxergando dobrado. Se for um tambor: o coração das pessoas começa a sincronizar com os batimentos do tambor, podendo usar isso para fazer todos passarem mal, aumentarem a adrenalina ou até terem um ataque cardíaco em casos extremos. Se for um instrumento de cordas: enrijece os músculos das pessoas, que ficam 'travadas' e sem muito reflexo, sentindo dores por todo o corpo. Se for instrumento de sopro: as pessoas começam a ficar ofegantes e sem ar, sufocando, sendo limitadas a respirarem somente em sincronia com os sopros da música, que podem ser rápidos ou extremamente demorados, dependendo da vontade e habilidade do bardo. ",
+      BracosOitavos:
+        "O lançador toca 8 notas quase simultaneamente e invoca 8 braços mágicos semi invisíveis que perseguem o inimigo alvo e agarram-no por todas as partes para imobilizá-lo. Alcance de 4 metros, dura apenas uma rodada e o lançador precisa ficar tocando a música enquanto conjura. "
+    }
+  },
+
+  DruidicSpells: {
+    Starter: {
+      ConexaoDruidica:
+        "O usuário fecha os olhos e fica imóvel pelo tempo que quiser para aumentar enormemente sua conexão com a natureza a sua volta. Vale lembrar que a natureza não é só seres vivos e terra, mesmo lugares e objetos alterados por seres humanos também fazem parte da natureza. Enquanto conectado, é possível sentir o movimento e a presença de qualquer coisa na região, além de se comunicar com a natureza para saber se algo a incomoda/machuca naquela área ou se alguma parte dela foi destruída de alguma maneira, como paredes arranhadas, pisos esburacados, galhos quebrados, etc. Enquanto conectado, o feiticeiro druida consegue ter uma rasa noção do formato estrutural da área, mas nada muito detalhado. Precisa gastar uma rodada inteira para começar a conexão.",
+      Familiar:
+        "A forte conexão de um Druida com a natureza permite que depois de algum treino ele consiga criar um pacto com um animal selvagem, chamado de familiar. Só é possível criar um pacto com um animal que já goste e se identifique com o feiticeiro, pois ele também precisa aceitar este pacto, que consiste em: A vida do druida e do familiar se unem em um mesmo destino, o que significa que não importa o que aconteça no futuro, o destino dos dois está entrelaçado. As vezes isso pode significar que, se um familiar morre não naturalmente, é possível que a morte do druida também esteja chegando; Se o druida engorda, é provável que o familiar também vá engordar; Se um dos dois se sente perdido e desamparado, o outro também vai, talvez por motivos diferentes; se os dois se separarem, é quase certo que se encontrarão de novo no futuro. Quanto maior a relação entre os dois, mais forte interligado seus destinos. É bem comum que o druida e o animal consigam fazer comunicações básicas mentalmente.",
+      FortalecerNatureza:
+        "Utiliza a energia arcana da natureza para fortalecer e estimular uma planta ou animal, tornando-os mais amigáveis com o druida, mais fortes e mais determinados. Pode ser utilizado tanto para acalmar um animal agressivo quanto para ajudar uma criatura selvagem a se recuperar de ferimentos, anestesiando a dor, e também para manter a moral de um animal convicta, determinado a permanecer em uma luta desvantajosa.",
+      Pacificar:
+        "Lança em um inimigo que esteja em até 3 metros de distância para que você se torne mais “amigável” aos olhos dele. O alvo deve jogar um dado de resiliência para resistir ao feitiço (no mínimo, ele passará a pensar 2 vezes antes de querer atacar o lançar e no máximo se tornar perdidamente apaixonado e defender o lançador de qualquer outro inimigo). Sempre acerta, mas é menos eficiente em pessoas do que em animais. Só pode ser usado em 1 alvo de cada vez. Dura 3 rodadas. Atacar o alvo encantado quebra o feitiço. ",
+      ExporFraqueza:
+        "Pode ser usado em qualquer coisa orgânica na natureza para torná-la mais sensível, quebradiça, fraca ou flexível por alguns minutos. Pode ser usada para mais facilmente derrubar e cortar árvores, matar plantas ou tornar animais mais sensitivos (sentem mais dor). Este feitiço não costuma ser usado frequentemente por druidas pois a maioria de suas utilidades vão contra a filosofia druídica de vivem em paz com a natureza, mas em alguns raros casos pode ser necessário, como por exemplo para facilitar o corte de uma árvore para trabalhar na madeira ou para se defender contra criaturas agressivas. Há uma variação muito mais avançada deste feitiço onde o druida pode usar em qualquer criatura para encontrar seu ponto fraco e expô-lo aos olhos do druida, podendo ver perfeitamente onde são seus pontos vitais onde um ataque pode se tornar fatal, e usar novamente este feitiço durante um ataque físico com o corpo naquele ponto para aumentar grandemente o resultado do ataque (só funciona se o ataque+feitiço for feito com uma parte do corpo do druida, como um soco, chute ou cabeçada).",
+      ComunicacaoSelvagem:
+        "permite o druida se comunicar com animais telepaticamente, embora a maioria dos animais não seja muito bom se expressando. Também é possível se comunicar com plantas... mas é difícil entender alguma coisa vindo delas além de suas condições vitais e algo que a esteja incomodando/necessita. Alguns druidas mais habilidosos conseguem, as vezes, extrair mais informações de plantas e objetos, como presenças que eles tenham sentido, sua história e até segredos que possam guardar. Uma variação mais avançada deste feitiço também permite ao druida dar o poder de fala para um animal temporariamente, mas dependendo do animal pode ser bem difícil."
+    },
+    Advanced: {
+      AgucarVisao: "Aprimora seus sentidos naturais, aumentando grandemente o alcance de sua visão e permitindo enxergar no escuro, como um felino.",
+      AgucarAudicao:
+        "Aumenta grandemente precisão de sua audição, conseguindo ouvir através de paredes, em locais bem mais distantes e também dizer exatamente de que direção vêm os sons.",
+      AgucarOlfato: "Fica com o olfato ainda mais forte do que um cão, com maior alcance e precisão.",
+      PosturaAnimal:
+        " É raro um druida precisar ser agressivo ou destrutivo, mas as vezes necessário. Através da observação de um animal na natureza, o druida pode copiar e guardar a essência do comportamento do animal na forma de uma memória reprimida, utilizando magia arcana para não confundir com suas memórias não-selvagens. Durante um combate, o druida pode liberar essas memórias e assumir o comportamento de algum desses animais, copiando seus instintos e naturalmente adaptando suas formas de ataque em técnicas usáveis por humanoides. Durante o feitiço, o druida fica em um transe que o torna selvagem e irracional, sendo muito difícil de controlar, e para utilizar habilmente as técnicas marciais selvagens é necessário muito treinamento especificamente com este feitiço, então é incomum encontrar alguém o tenha dominado por completo.",
+      AlmasGemeas:
+        "O druida e seu companheiro familiar tem uma ligação tão forte que permite o druida temporariamente incorporar seu companheiro e controlar o seu corpo. Esta possessão pode ser completa, onde o druida fica em estado de meditação enquanto sua mente está dentro do familiar, ou pode ser parcial, onde o druida continua se movendo e agindo normalmente mas consegue dar comandos bem específicos à seu animal, permitindo os dois a lutarem em sincronia perfeita, e neste estado de sincronia onde não há possessão não é gasta muita mana para usar o feitiço. ",
+      MetamorfoseFamiliar:
+        "Transforma seu companheiro familiar para se tornar algum outro animal que você tenha visto recentemente ou que você tenha uma conexão forte. Todo druida tem uma pequena lista de animais que eles mais se identificam e compreendem melhor, criando esta específica conexão forte. A transformação de seu familiar dura enquanto você canalizar (diferente do feitiço Metamorfose Druídica) e consome bastante mana."
+    },
+    Archmage: {
+      MetamorfoseDruidica:
+        "Um poderoso e raro feitiço que permite ao druida se transformar em um animal, a sua escolha, mas precisa ser um animal que ele já tenha visto alguma vez na vida, pessoalmente. A manipulação mágica do feiticeiro é essencial, pois é comum acontecer de a transformação não funcionar corretamente e o animal transformado não exatamente o mesmo que se pretendia, mais algum similar. Pode acontecer também de a transformação sair muito errada e alguma parte do corpo do animal esteja, simplesmente, errada. O mais comum nas imperfeições são cores diferentes e algumas características físicas do druida serem carregadas na transformação, como cicatrizes, cor de pele/cabelo e tatuagens. A transformação dura indefinidamente, mas cada transformação para animal ou pessoa é extremamente cansativa para a mana. Enquanto animal, não consegue usar outros feitiços, mas consegue manipular magia elemental com -4 em manipulação mágica e -4 em poder mágico. ",
+      Possessao:
+        "Força o seu espírito a invadir algum outro corpo, ou até objeto, mas quanto mais diferente fisicamente do druida, mais difícil é a conjuração. Em caso de outras criaturas vivas, há o conflito entre os espíritos, então é necessário sobrepujar o outro, o que pode ser extremamente difícil, a não ser que a criatura permita a sua possessão, o que é comum com familiares. Há dois grandes riscos com este feitiço: Primeiro, se a criatura morrer ou o objeto for destruído durante a possessão o druida precisa ser muito rápido para cancelar o feitiço, ou poderá morrer junto; e em raríssimos casos também é possível que um druida nunca mais consiga voltar para o seu corpo ficando preso no animal/objeto para sempre. Não é possível usar outros feitiços ou magias durante a possessão, a não ser que o corpo possuído também tenha essas habilidades."
+    }
+  },
+
+  ConjurationSpells: {
+    Starter: {
+      ConjuracaoBasica:
+        "Este é o feitiço mais fundamental para qualquer conjurador e seu exercício depende muito da imaginação do usuário. Você visualiza em sua cabeça um objeto físico e sólido com todas as suas características (tamanho, formato, peso, densidade, elasticidade, etc) e com isso é capaz de materializá-lo, mas há varias limitações, como por exemplo: não é possível criar objetos muito grandes, objetos líquidos ou gasosos, objetos com muitos detalhes como marcas entalhadas, buracos pequenos ou faces afiadas demais (é possível criar, no máximo, uma faca cega) e objetos minúsculos demais também são difíceis de criar (algo menor que uma agulha). A dificuldade",
+      BarreiraArcana:
+        "Cria uma barreira arcana mágica com 2x2 metros que bloqueia completamente qualquer ataque térmico, mágico, físico ou arcano lançado através dela. Precisa canalizar para manter existindo. ",
+      LancaArcana:
+        "Invoca uma lança mágica que pode ser arremessada em até 8 metros. A lança é fina mas tem uma forte penetração. Não colide com nenhum objeto, apenas com seres vivos como plantas, animais ou pessoas. Se o conjurador soltar a lança, ela desaparece depois de alguns segundos.",
+      ProjetilArcano:
+        "Invoca uma flecha mágica com características físicas, leve e afiada. Pode ser atirada em uma arma de disparo no mesmo turno. A flecha tem as mesmas propriedades de uma flecha comum, mas desaparece alguns segundos depois de solta, então seu alcance não é muito grande. ",
+      RepulsaoLocalizada:
+        "Cria uma bola de mana super concentrada que pode ser arremessada e explode como uma granada depois de encostar em qualquer superfície, alcance de 5 metros para lançamento em 2 metros da explosão. ",
+      OrbeDeMana:
+        "Uma magia arcana física concentrada e com seu perímetro “elástico” (sempre que acertar qualquer objeto físico, ela é refletida e continua seu caminho). O orbe alcança até 6 metros antes de se desfazer (+6 metros para cada ricocheteada) e causa um grande impacto sempre que acerta outro objeto físico, causando dano. Se o lançador tentar pegar a orbe de volta ele tem chance de ser acertado e receber dano ou de pegá-la e poder lançá-la novamente sem custo nenhum. ",
+      AlgemasDeContencao:
+        " Cria uma corrente mágica, com comprimento a ser decidido na conjuração, que pode ser usada para amarrar, algemar ou prender um objeto em outro. As algemas funcionam exatamente como uma corda, a única diferença é que elas tem a propriedade mágica de impedir que a pessoa amarrada/algemada use qualquer feitiço arcano, bloqueando o seu fluxo de mana. Para manter as algemas existindo é necessário ficar gastando mana, mas uma quantidade bem pequena, a não ser que se queira fazer uma corda extensa, neste caso é bem custoso."
+    },
+    Advanced: {
+      ConjuracaoAvancada:
+        "Uma versão bem mais aperfeiçoada da Conjuração Básica, mas nem todo conjurador avançado aprende este feitiço. Suas limitações são bem menores do que a básica e permite criar objetos como espadas afiadas, esculturas, armaduras e até portas inteiras.",
+      Duplicar:
+        "Cria uma cópia mágica de um objeto que o feiticeiro esteja vendo, com todas as características iguais. Diferente de uma Conjuração Avançada, pode criar objetos grandes e mover o objeto, porém a duplicata mantém-se ligada a original, então todo movimento que o objeto original faz, a cópia imita sem o feiticeiro precisar se concentrar demais. Este feitiço pode ser usado em artes marciais para duplicar uma membro do corpo ou uma arma durante um ataque para fazer dois ataques simultâneos. Um feiticeiro poderoso, a nível de arquimago, pode até usar este feitiço para duplicar uma pessoa inteira, onde a cópia ficará imitando seus movimentos.",
+      DuploImpacto:
+        " Cria uma flecha arcana que causa um forte estouro ao acertar um alvo e cria uma réplica dela mesma um metro atrás do alvo que foi acertado, que continua a percorrer o caminho até acertar outro alvo (a segunda flecha também causa um forte estouro mas não cria outra réplica). Cada flecha desaparece depois de 6 metros. ",
+      ClonagemDeProjeteis:
+        "Dispara uma flecha arcana que depois de 2 metros se divide em 4 flechas um pouco menores e mais fracas. Cada uma das flechas causa uma fração do dano original e se espalham em qualquer direção quando são quadruplicadas, cada uma indo em direção a um alvo desejado. As flechas desaparecem depois de 4 metros do ponto que se dividiram (no máximo 8 metros).",
+      ArmaduraDeArcano:
+        "Conjura uma camada de energia arcana que reveste seu corpo, servindo como uma armadura mágica contra qualquer impacto. A armadura dura 6 rodadas e as regiões atingidas da energia se quebram e não são recuperadas. ",
+      PortalMagico:
+        "Na primeira conjuração, Invoca um portal do tamanho de uma porta, em uma superfície não muito irregular a sua frente, que inicialmente não faz nada. Na segunda conjuração cria o outro lado do portal onde os dois se ligam e quem passar por um sai pelo outro. Os dois portais podem ter no máximo 10 metros de distância um do outro e se o conjurador estiver a mais de 10 metros de distância de algum deles, os dois portais se desfazem. É preciso tocar na superfície para criar o portal. Dura por tempo definido pelo conjurador, mas não pode fazer desaparecer se algo estiver o atravessando no momento.",
+      MantoArcano:
+        "Invoca um manto mágico que dá invisibilidade a tudo que ficar sob ele. Cabe até 4 pessoas normais juntas em baixo dele. Se mover muito rápido embaixo do manto fará as pessoas notarem a presença de algo."
+    },
+    Archmage: {
+      ManipulacaoMaximaConjuracao:
+        "O mais elevado nível de um conjurador, pode criar objetos grandes e pesados, como plataformas, paredes ou até um bloco enorme para esmagar seus inimigos. Pode também controlar e movimentar suas conjurações sem precisar tocá-las, movendo os objetos como se tivesse telecinesia, porém com muito mas destreza e precisão. Além de tudo isso também pode-se usar este feitiço para teleportar um objeto que você de volta para sua mão, sem precisar gastar muita mana para conjurá-lo novamente. Também é possível destruir conjurações de outros feiticeiros com este feitiço.",
+      InvocarGolem:
+        "Gasta toda a sua mana para criar uma criatura mágica, um golem de arcano que se comporta como um robô programado por você. Quanto mais mana você tiver gastado, maior e mais forte será este golem. Ao criá-lo, você precisa estabelecer como parâmetro para ele uma ordem, um comando. Depois de criado o golem não é capaz de compreender mais comandos, e se limitará a fazer aquilo que lhe foi programado na criação. O corpo do golem é resistente a impactos e golpes em geral, se regenerando em segundos, mas magias arcanas ou elementais são fortes contra ele. O golem desaparece 24 horas depois da conjuração."
+    }
+  },
+
+  RunicSpells: {
+    Starter: {
+      TintaArcana:
+        "O feitiço básico mais fundamental da escola Rúnica, ele que permite ao feiticeiro conseguir aprender qualquer outro feitiço desta escola. Pode ser usado para escrever no ar com uma 'tinta mágica' que fica flutuando por tempo indeterminado, até que algum feiticeiro dissipe o efeito. A 'tinta' só pode ser da cor do próprio arcano, geralmente usada para escrever algo ou demonstrar objetos tridimensionalmente. Pode ser usado também para escrever em objetos com essa mesma tinta, a diferença é que quando está inscrito num objeto ele pode ser usado para formar símbolos (runas) que dão surgimento a outros feitiços rúnicos que podem ser usados para ativar elas. ",
+      ParedeMagica:
+        "Cria uma área poligonal entre qualquer número de runas que funciona como uma barreira mágica e física, impedindo a passagem de qualquer coisa, com exceção de calor e frio. As próprias runas também são protegidas pela barreira. Quando qualquer parte da barreira é destruída, toda ela se quebra.",
+      ArmadilhaAtracao:
+        "Há dois módulos neste feitiço: a Runa Atrativa e a Runa Estimulante. Quando a runa atrativa é ativada (sobre pressão) o objeto em que a runa estimulante está escrita é atraído por um campo específico gerado na runa atrativa, este campo pode ser mais ou menos forte dependendo do tamanho da runa. Em casos mais simples, é capaz de mover objetos pesados lentamente, mas com runas grandes é capaz de disparar um projétil de uma runa até outra. Múltiplas runas atrativas e estimulantes podem ser escritas para interagir. A runa se desgasta depois de pouco tempo de uso. Alcance máximo de 20 metros.",
+      ConexaoInvisivel:
+        "São duas runas que, quando ativadas, criam uma forte ligação entre sí. Dependendo de como o feiticeiro configurar a runa, ela pode ou impedir que os dois objetos conectados se afastem um do outro mais do que a distância em que estavam quando a runa foi ativada, ou impedir que os dois objetos se aproximem mais um do outro, ou os dois ao mesmo tempo. O tempo de desgaste desta runa é muito dependente da força aplicada nos objetos para quebrar sua conexão, 'pendurar' uma vela no teto, por exemplo, pode durar meses se ninguém mexer nela, mas ligar uma pessoa em outra pode se quebrar em segundos de força, dependendo do poder mágico do feiticeiro. Esta runa é uma das mais rápidas que existem para se fazer, pois ela precisa apenas de dois símbolos simples para funcionar, um em cada objeto. Alcance máximo de 10 metros. ",
+      RunaGps:
+        "Mais conhecida como Grande Pássaro Sentinela(GPS). Estas runas formam uma sequência específica, definida pelo criador, que se interligam. Só podem ser ativadas por um feiticeiro que também conheça o feitiço, seu efeito é criar um mágico pássaro etéreo que voa em linha reta em direção a próxima runa programada do mesmo tipo, até chegar na última runa e então desaparece. O pássaro GPS só pode ser visto por feiticeiros, pessoas normais só enxergam vultos. Não há alcance máximo. Na cultura dos feiticeiros acadêmicos, um GPS costuma ser um sinal de algo muito ruim prestes a acontecer, um aviso, mas também é usado para ativar mecanismos a longas distâncias. A runa também pode ser configurada para tentar não colidir com objetos físicos, tentando encontrar o caminho mais curto para ir até o objetivo.",
+      Sentinela:
+        "Quanto mais perto esta runa estiver de uma fonte de magia (inclusive outras runas) mais forte ela brilha. É possível conectar esta runa a outra para usá-la como gatilho de algum efeito, a runa conectada não dispara a Sentinela. O gatilho pode ser disparado manualmente por um feiticeiro em alcance de toque e o feiticeiro não precisa ter conhecimento específico sobre este feitiço, é necessário apenas liberar um pouco de sua mana para ativá-la. A runa também pode ser configurada para ser ativada por contato com algo pesado ou simples toque. Também é possível configurar a runa para não apagar mais depois de acender, o que é útil por exemplo para colocar em uma passagem e deixar ela para ativar caso alguém pise em cima, notificando o feiticeiro que alguém esteve ali.",
+      AuraDeExpurgacao:
+        "Uma lista de runas que afastam qualquer espírito de perto delas, permitindo criar um perímetro de contenção. Como anjos e demônios também são uma forma de espírito, as runas também funcionam neles, porém eles são mais fortes e, se descobrirem onde estão as runas, podem destruí-las. Para áreas muito grandes, é possível criar largos grupos de runas em forma de círculo, em cinto locais diferentes, formando um pentagrama que define a área de contenção.",
+      SeloDeFechaduras:
+        "Cria uma runa mágica em alguma fechadura , algum mecanismo, que deixa ele completamente travado, nenhuma chave funcionará de novo nele. Para ativá-lo e destrancar, algum pré-requisito precisa ser cumprido que é definido pelo próprio feiticeiro, este pré requisito pode ser identificado por qualquer feiticeiro que analise a runa, mesmo que não conheça o feitiço. Duas populares aplicações do selo é: O selo só se quebra se uma pessoa específica, geralmente o feiticeiro que criou, tocar na runa ou o selo só quebra se na fechadura for inserida uma chave que possuí uma runa específica. O feitiço de encantamento 'Selamento de Portal' pode ser usado para destruir esta runa."
+    },
+    Advanced: {
+      RunaDeFortalecimento:
+        "Esta runa é feita com desenhos em um certo padrão tribal contínuo e pode ser escrita com qualquer tamanho, toda a área do objeto coberta pelas runas se tornam mais rígidas, com uma resistente camada de arcano que aumenta a resistência contra impactos físicos ou mágicos, mas a runa se desgasta com o tempo.",
+      RunaDeFragilidade:
+        "Qualquer objeto com este tipo de runa se torna mais suscetível a feitiços de Encantamento e mais frágil contra dano proveniente de magia arcana. A amplificação dos feitiços causada por essa runa varia dependendo do efeito do feitiço.",
+      ExtracaoArcana:
+        "Uma simples runa, rápida de ser feita, que remove propriedades mágicas de um objeto, podendo ser usada para desencantar um item. Um circulo grande dessas runas é capaz de remover a mana de todo o ambiente, impedindo que feiticeiros regenerem sua mana. Se for aplicada em um objeto qualquer, como um papel, e então posicionado em algo mágico, aquele item perderá suas características mágicas, mas neste caso só temporariamente, enquanto a runa estiver lá. Em casos de itens mágicos muito fortes, é necessário fazer várias cópias dessa runa, demorando assim mais tempo. Esta runa ou um objeto com esta runa pode desfazer um objeto criado por feitiços de conjuração apenas ao toque.",
+      RitualDeSelamento:
+        "Escreve uma longa sequência de runas em um objeto para que quando aproximado de um espírito ele seja sugado para dentro do objeto, assombrando ele para sempre, ou até as runas serem quebradas. Geralmente uma sequência de runas só prende 1 espírito.",
+      ArmadilhaLamina:
+        "duas grandes runas separadas por uma distância de no máximo 5 metros detectam sinais vitais de seres vivos que atravessem a linha que os conecta. Quando isso acontece, uma sequência de pequenas lâminas cortantes voando de uma runa para a outra, cortando tudo no caminho. Esta runa nunca desaparece, mesmo depois de ativada, mas quanto mais tempo ela permanecer ativada, mas lentas e fracas serão as lâminas.",
+      ArmadilhaExplosao:
+        "Uma grande runa ativada sobre a pressão de um objeto, geralmente algo pesado pisando em cima, ou alguém empurrando a runa. Ao ativar, explode com um forte pulso de energia, com alcance de 1 a 2 metros. Uso único.",
+      ProjecaoAstral:
+        "Um conjunto de runas em formato de circulo, com 2 metros de diâmetro, que pode ser usada pelo feiticeiro para projetar uma cópia (um holograma) do corpo do feiticeiro para dentro da runa, não importa onde no mundo ele esteja. A projeção do feiticeiro também copia sua fala e pode ser usada para comunicação a longas distâncias, mas a aparência dele é apenas uma silhueta azul, sem face, cor ou roupas."
+    },
+    Archmage: {
+      RunaDeProtecao:
+        "Cria uma camada mágica em volta da superfície do objeto, invisível aos olhos, que absorve qualquer tipo de energia arcana que se aproxime ou tente o atingir. A energia absorvida fortalece o escudo mais ainda, aumentando sua resistência. A única maneira de quebrar a proteção é destruindo a runa com ataques físicos ou elementais, o que é mais difícil quanto mais magia arcana a runa tiver absorvido recentemente. Usar esta runa em uma pessoa pode ser extremamente danoso a saúde e dificulta o uso de feitiços arcanos.",
+      PortalDeRunas:
+        "Uma longa sequência de runas que se conectam para criar um portal entre elas, o portal é permanente e envia a pessoa que o atravessar para outro portal de runas semelhante, em qualquer lugar no mundo. O tamanho máximo do portal é de 2 metros de diâmetro. Cada portal tem um código sequencial de runas que indica para qual portal aquele se conecta. Caso hajam mais de 2 portais com o mesmo código de identificação é imprevisível saber para qual ele o levará. Este feitiço é extremamente raro, poucas pessoas no mundo o conhecem e pessoas ricas ou reis comumente os pagam para manter em sigilo o uso deste feitiço, para monopolizar seu uso. Infelizmente é muito difícil fazer as runas com perfeição e um portal mal criado pode matar a pessoa que o atravessar, desintegrando o seu corpo."
+    }
+  },
+
+  EnchantmentSpells: {
+    Starter: {
+      Engrandecer:
+        "Encanta temporariamente (2 rodadas) um objeto de tamanho menor que o lançador para dobrar seu tamanho (não necessariamente precisa ser todas as suas dimensões) enquanto massa arcana preenche os espaços vazios, mantendo sua resistência mas sem aumentar em nada seu peso. Custa mana para cada objeto encantado (pode encantar mais de um no mesmo turno). É muito difícil de usar em pessoas, mas funciona em menor escala.",
+      SelamentoDePortal:
+        "Fixa algum tipo de porta ou janela com uma força mágica, tornando-a muito mais difícil de abrir mesmo tentando derrubar a entrada. O mesmo feitiço pode ser usado para destrancar ou trancar uma fechadura.",
+      MaldicaoAzar:
+        "Deixa uma pessoa, local ou objeto azarado por 1 semana. Os efeitos do azar são imprevisíveis, podendo ser algo muito ou pouco significativo.",
+      MaldicaoAntissocial:
+        "Um feitiço que causa todos que olham para aquela pessoa, pela próxima 1 semana, a vê-la com alguma característica ruim, sendo falsamente fabricada por magia. Por exemplo, eles podem sentir odores muito fortes vindo daquela pessoa, podem parecer sujos, doentes, muito mal humorados/irritados ou podem ver algo de muito desagradável na aparência da pessoa, sendo tudo 'ilusões'. Aquilo que cada pessoa enxerga é diferente e este efeito acontece com pessoas pessoas aleatórias que o olham, não com todos.",
+      Maldicaoinsonia:
+        "Por três dias, uma pessoa se torna quase incapaz de dormir ou descansar, dependendo de seu poder mágico e da resiliência dela. Se ela for forte o suficiente, talvez o feitiço nem surta efeito.",
+      MaldicaoMentePobre:
+        "Durante 1 semana, a pessoa sentirá dificuldade para pensar coisas produtivas, ter ideias ou resolver problemas. Sua criatividade estará muito fraca e pensar demais pode até causar dores de cabeça a pessoa. O efeito não é muito forte e qualquer feiticeiro decente é capaz de perceber quando está sobre este feitiço.",
+      Seducao:
+        "Um dos feitiços mais simples de todos. Estimula artificialmente os hormônios de uma pessoa para se sentir mais atraída pela pessoa que está olhando naquele momento. O efeito é pequeno, mas em muitos casos suficientemente efetivo.",
+      RaioDesgourmetizador:
+        "Pode encantar alguma comida para mudar o sabor dela, o sabor deve ser algo que o feiticeiro tenha provado em algum momento de sua vida e que ainda tenha vívidas memórias sobre. Pode ser usado tanto para deixar a comida melhor quanto repulsiva.",
+      Elasticar:
+        "Muda as propriedades de um objeto qualquer podendo deixado mais mole, elástico, ou mais rígido. Dependendo da Manipulação Mágica do feiticeiro, pode quebrar o objeto. Dura 1 hora.",
+      MaldicaoParanoia:
+        "Durante 3 dias, a pessoa fica com os pensamentos levemente alucinados, enxergando coisas aleatórias onde não há nada, pensando ter ouvido coisas que nunca foram ditas. Em casos de personagens com baixa resiliência, esta maldição pode até enlouquecer uma pessoa. Conforme os dias passam, as paranoias vão se intensificando.",
+      MaldicaoAnalfabetismo:
+        "Durante 1 dia, acaba com a capacidade da pessoa de conseguir articular um discurso elaborado, limitando ela a falar como uma criança pequena, usando apenas palavras simples e desconexas. Além da comunicação da pessoa ficar debilitada, sua capacidade de leitura também diminui drasticamente."
+    },
+    Advanced: {
+      Enfeiticar:
+        "Encanta um objeto pequeno e leve para levitar e fazer movimentos precisos apenas com o poder da mente. Alcance de 6 metros. Comumente usado para fazer ventriloquismo, escrever no papel com uma pena, varrer o chão, atacar uma pessoa com uma faca, etc. É muito difícil mover qualquer objeto maior do que isso. O feitiço não é canalizado e o objeto quase se move por conta própria, sendo controlado apenas pela mente, fala ou música. Dura 5 minutos.",
+      MaldicaoExaustao:
+        "Imediatamente exauri as energias de uma pessoa, deixando ela cansada e indisposta, mas não o suficiente para desmaiar ou parar de lutar durante uma batalha, embora que em uma luta pode ser usado para diminuir a capacidade da pessoa de continuar por muito mais tempo.",
+      MaldicaoTrocaDeSexo:
+        "Durante 3 dias, a pessoa vai perceber que suas genitálias estão... diferentes. Para alguns, uma maldição, para outros, uma benção. Existe uma variação, mais rara e complexa, deste feitiço que pode causar a troca de sexo para durar anos ou até para sempre.",
+      PactoCompartilharSentimentos:
+        "Para fazer um pacto, ambas as partes precisam aceitar o efeito de livre vontade. Durante 3 dias, todos os sentimentos das duas pessoas são divididos entre os dois, tanto os bons quanto os ruins. Isso significa que uma dor, por exemplo, vai ser sentida só pela metade, mas a outra pessoa também vai sentir, não importa onde esteja. Uma pessoa que morra durante o compartilhamento de sentimentos é tão perigoso que pode até matar o outro conectado, mas nos melhores casos causa dores extremas e a pessoa desmaia. Até acabar o prazo, a pessoa conectada que ainda está viva irá sentir muita angústia, tristeza, e será capaz de sentir a presença do espírito do morto, até que um Ceifador o busque. Não há limite no alcance deste feitiço, depois do pacto feito. ",
+      GravidadeDinamica:
+        "Altera o peso de um objeto que esteja tocando, podendo deixá-lo mais leve ou mais pesado. Em geral é muito difícil algo ficar com mais que o dobro ou menos da metade do peso original, mais isso depende do Poder Mágico do feiticeiro. Dura enquanto for canalizado.",
+      TornarEtereo:
+        "Muda temporariamente a composição do seu corpo para torná-lo permeável com magia arcana, permitindo que a pessoa atravesse paredes, se liberte de amarras ou até evite dano. Usar durante combate para 'esquivar' de um ataque é bem difícil, mas viável em casos onde o ataque era muito previsível com antecipação.",
+      PactoTrocaDeCorpo:
+        "Para que um pacto funcione é necessário que as duas partes aceitem de livre vontade o efeito. É um feitiço muito conhecido, porém raro que alguém o saiba, pois quem o conhece tem medo de ensiná-lo, pelo potencial perigo. Durante 3 dias, as duas pessoas trocam de mente, controlando o corpo um do outro. Se um deles morrer durante a duração, a consciência da pessoa permanece no corpo em que está e o pacto nunca acaba. Elementares percebem a troca e vão se recusar a ceder seus poderes a pessoa errada. A habilidade de controlar o arcano não é passada adiante junto com a mente.",
+      UltimoSuspiro:
+        "Como uma última alternativa de sobrevivência, ativa um modo frenético que permite realizar todas suas ações com maior habilidade, ganhando um bônus de +2 em todas suas jogadas no dado para cada ponto de Poder Mágico que você tiver, com mínimo de +1. Além disso, seu corpo ignora qualquer dor e se move mesmo que ferido. Seu sangue interno é consumido pela magia para a conjuração, podendo dificultar ainda mais sua recuperação no futuro, caso esteja seriamente ferido. O efeito dura 2 rodadas, mas quando acaba você fica incapacitado e desmaia. "
+    },
+    Archmage: {
+      DesaceleracaoTemporal:
+        "Enfeitiça seu próprio corpo temporariamente, sua percepção de tempo e movimento é alterada, tudo parecendo mais lento. Seus movimentos continuam na mesma velocidade, apenas sua percepção e reflexo aumentam. Este feitiço utiliza muita energia e usá-lo por alguns segundos já consome muita mana.",
+      AtormentarPensamentos:
+        "Pode tentar dominar a mente de um personagem dentro de 3 metros para fazê-lo enlouquecer e ver todos em sua volta como se fossem demônios, criaturas assustadoras e medonhas. Dependendo do personagem alvo, ele pode fazer diversas coisas, mas todas elas serão exageradas e não racionais. Dura 3 rodadas.",
+      AcaoInvoluntaria:
+        "Este feitiço pode controlar a mente de uma pessoa para deixar ela mais suscetível a sugestões externas, mais inclinada a aceitar propostas e pode até mesmo obrigar uma pessoa a aceitar um feitiço de Pacto, usado em conjunto com este feitiço, mesmo que ela não queira."
     }
   },
 

@@ -3,10 +3,9 @@ const Images = require("./images");
 
 //TODO: remover acentos das palavras
 //TODO: estudar predição de erros
-//TODO: include civilizations
-//TODO: fix messages bigger than 2000
 function matchMeaning(args) {
   let arg = args.join(" ").toUpperCase();
+  args = args.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
   let message;
 
   switch (arg) {
@@ -112,6 +111,28 @@ function matchMeaning(args) {
       return Glossary.GeneralSpells.Starter.ExplorarPensamentos;
 
     /* General Spells - Advances Level */
+    case "IMPLOSAO ESPACIAL":
+      return Glossary.GeneralSpells.Advanced.ImplosaoEspacial;
+    case "AURA DE ENERGIA":
+      return Glossary.GeneralSpells.Advanced.AuraDeEnergia;
+    case "CHUVA DE DESTRUICAO":
+      return Glossary.GeneralSpells.Advanced.ChuvaDeDestruicao;
+    case "FORCA ATRATIVA":
+      return Glossary.GeneralSpells.Advanced.ForcaAtrativa;
+    case "CONTRA FEITICO":
+      return Glossary.GeneralSpells.Advanced.ContraFeitico;
+    case "EMARANHADO MAGICO":
+      return Glossary.GeneralSpells.Advanced.EmaranhadoMagico;
+    case "DESPRENDER ESPIRITO":
+      return Glossary.GeneralSpells.Advanced.DesprenderEspirito;
+    case "FLUXO DE MANA":
+      return Glossary.GeneralSpells.Advanced.FluxoDeMana;
+
+    /* General Spells - Archmage Level */
+    case "ARENA INTERDIMENSIONAL":
+      return Glossary.GeneralSpells.Archmage.ArenaInterdimensional;
+    case "ELETROCUTAR":
+      return Glossary.GeneralSpells.Archmage.Eletrocutar;
 
     /* Plants */
     case "FLOUREN":
