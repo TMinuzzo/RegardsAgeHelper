@@ -1,3 +1,5 @@
+const unorm = require("unorm");
+
 const Glossary = require("./glossary.js");
 const Images = require("./images");
 
@@ -5,7 +7,8 @@ const Images = require("./images");
 //TODO: estudar predição de erros
 function matchMeaning(args) {
   let arg = args.join(" ").toUpperCase();
-  args = args.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  let combining = /[\u0300-\u036F]/g; // Use XRegExp('\\p{M}', 'g'); see example.js.
+  arg = unorm.nfd(arg).replace(combining, "");
   let message;
 
   switch (arg) {
@@ -22,7 +25,6 @@ function matchMeaning(args) {
 
     /* Attributes */
     case "CONSTITUICAO":
-    case "CONSTITUIÇAO":
       return Glossary.Attributes.Constituicao;
     case "FORCA":
     case "FORÇA":
@@ -34,14 +36,12 @@ function matchMeaning(args) {
     case "PODER MAGICO":
       return Glossary.Attributes.PoderMagico;
     case "MANIPULACAO MAGICA":
-    case "MANIPULAÇAO MAGICA":
       return Glossary.Attributes.ManipulacaoMagica;
     case "CAUTELA":
       return Glossary.Attributes.Cautela;
     case "PERSPICACIA":
       return Glossary.Attributes.Perspicacia;
     case "DISCRICAO":
-    case "DISCRIÇAO":
       return Glossary.Attributes.Discricao;
     case "EXTRAVAGANCIA":
       return Glossary.Attributes.Extravagancia;
@@ -147,7 +147,6 @@ function matchMeaning(args) {
       return Glossary.Plants.Surinan;
     case "TRIGALIA":
       return Glossary.Plants.Trigalia;
-    case "ORIÇUA":
     case "ORICUA":
       return Glossary.Plants.Oriçua;
     case "XASCENNE":
