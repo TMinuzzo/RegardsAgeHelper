@@ -13,6 +13,7 @@
         "discord.io": "^2.5.3",
         "discord.js": "^12.1.1",
         "dotenv": "^8.2.0",
+        "js-levenshtein": "^1.1.6",
         "unorm": "^1.6.0",
         "winston": "^3.2.1"
     },
