@@ -77,6 +77,42 @@ function matchMeaning(args) {
       };
       return message;
 
+    /* Civilizations */
+    case "NORDICO":
+      return Glossary.Civilizations.Nordico;
+    case "SULISTA":
+      return Glossary.Civilizations.Sulista;
+    case "ZARDIENENSE":
+      return Glossary.Civilizations.Zardienense;
+    case "GARNAK":
+      return Glossary.Civilizations.Garnak;
+    case "BOTHRA":
+      return Glossary.Civilizations.Bothra;
+    case "VUL NES MAI":
+      return Glossary.Civilizations.VulNesMai;
+    case "WORT HEM":
+      return Glossary.Civilizations.WortHem;
+    case "DRUKAM":
+      return Glossary.Civilizations.Drukan;
+
+    /* General Spells - Starter Level*/
+    case "TELECINESE":
+      return Glossary.GeneralSpells.Starter.Telecinese;
+    case "REPULSAO":
+      return Glossary.GeneralSpells.Starter.Repulsao;
+    case "CAMINHAR NA AGUA":
+      return Glossary.GeneralSpells.Starter.CaminharNaAgua;
+    case "TELEPATIA":
+      return Glossary.GeneralSpells.Starter.Telepatia;
+    case "CLARIVIDENCIA":
+      return Glossary.GeneralSpells.Starter.Clarividencia;
+    case "CLEPTOMANCIA":
+      return Glossary.GeneralSpells.Starter.Cleptomania;
+    case "EXPLORAR PENSAMENTOS":
+      return Glossary.GeneralSpells.Starter.ExplorarPensamentos;
+
+    /* General Spells - Advances Level */
+
     /* Plants */
     case "FLOUREN":
       return Glossary.Plants.Flouren;
