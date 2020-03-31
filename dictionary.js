@@ -3,8 +3,12 @@ const Images = require("./images");
 
 //TODO: remover acentos das palavras
 //TODO: estudar predição de erros
+//TODO: include civilizations
+//TODO: fix messages bigger than 2000
 function matchMeaning(args) {
   let arg = args.join(" ").toUpperCase();
+  let message;
+
   switch (arg) {
     case "MANA":
       return Glossary.General.Mana;
@@ -14,6 +18,8 @@ function matchMeaning(args) {
     case "FEITICEIRO":
     case "FEITICEIROS":
       return Glossary.General.MageSorcerer;
+    case "GEMAS":
+      return Glossary.General.Gemas;
 
     /* Attributes */
     case "CONSTITUICAO":
@@ -45,19 +51,31 @@ function matchMeaning(args) {
 
     /* Races */
     case "HUMANO":
-      const message = {
+      message = {
         text: Glossary.Races.Humano,
         img: Images.Races.HumanoSulista
       };
       return message;
     case "ORC":
-      return Glossary.Races.Orc;
+      message = {
+        text: Glossary.Races.Orc,
+        img: Images.Races.Orc
+      };
+      return message;
     case "LIZARDIO":
-      return Glossary.Races.Lizardio;
+      message = {
+        text: Glossary.Races.Lizardio,
+        img: Images.Races.Lizardio
+      };
+      return message;
     case "UNDERALL":
       return Glossary.Races.Underall;
     case "TELNO":
-      return Glossary.Races.Telno;
+      message = {
+        text: Glossary.Races.Telno,
+        img: Images.Races.Telno
+      };
+      return message;
 
     /* Plants */
     case "FLOUREN":
