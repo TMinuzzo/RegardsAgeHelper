@@ -72,6 +72,26 @@ const dictObj = {
   ARENA_INTERDIMENSIONAL: Glossary.GeneralSpells.Archmage.ArenaInterdimensional,
   ELETROCUTAR: Glossary.GeneralSpells.Archmage.Eletrocutar,
 
+  /* Musical Spells - Starter Spells */
+  DIRECIONAR_SONS: Glossary.MusicalSpells.Starter.DirecionarSons,
+  MUSICA_PROFUNDA: Glossary.MusicalSpells.Starter.MusicaProfunda,
+  CORDAS_HIPNOTICAS: Glossary.MusicalSpells.Starter.CordasHipnoticas,
+  VIBRACAO_MUSICAL: Glossary.MusicalSpells.Starter.VibracaoMusical,
+  CANCAO_INSPIRADORA: Glossary.MusicalSpells.Starter.CancaoInspiradora,
+  RITMO_DESCONTROLADO: Glossary.MusicalSpells.Starter.RitmoDescontrolado,
+  HARMONIA_TRANQUILIZADORA: Glossary.MusicalSpells.Starter.HarmoniaTranquilizadora,
+
+  /* Musical Spells - Advanced Level */
+  SINFONIA_DA_VERDADE: Glossary.MusicalSpells.Advanced.SinfoniaDaVerdade,
+  MELODIA_SELVAGEM: Glossary.MusicalSpells.Advanced.MelodiaSelvagem,
+  TOCAR_O_TERROR: Glossary.MusicalSpells.Advanced.TocarOTerror,
+  MUSICA_DO_SOCORRO: Glossary.MusicalSpells.Advanced.MusicaDoSocorro,
+  CORDAS_MAGICAS: Glossary.MusicalSpells.Advanced.CordasMagicas,
+
+  /* Musical Spells - Archmage Level */
+  ORQUESTRA_DO_VENTRILOCO: Glossary.MusicalSpells.Archmage.OrquestraDoVentriloco,
+  BRACOS_OITAVOS: Glossary.MusicalSpells.Archmage.BracosOitavos,
+
   /* Plants */
   FLOUREN: Glossary.Plants.Flouren,
   PERILACEA: Glossary.Plants.Perilacea,
