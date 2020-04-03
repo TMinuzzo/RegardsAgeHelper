@@ -113,12 +113,49 @@ const dictObj = {
   POSSESSAO: Glossary.DruidicSpells.Archmage.Possessao,
 
   /* Conjuration Spells - Starter Spells */
+  CONJURACAO_BASICA: Glossary.ConjurationSpells.Starter.ConjuracaoBasica,
+  BARREIRA_ARCANA: Glossary.ConjurationSpells.Starter.BarreiraArcana,
+  LANCA_ARCANA: Glossary.ConjurationSpells.Starter.LancaArcana,
+  PROJETIL_ARCANO: Glossary.ConjurationSpells.Starter.ProjetilArcano,
+  REPULSAO_LOCALIZADA: Glossary.ConjurationSpells.Starter.RepulsaoLocalizada,
+  ORBE_DE_MANA: Glossary.ConjurationSpells.Starter.OrbeDeMana,
+  ALGEMAS_DE_CONTENCAO: Glossary.ConjurationSpells.Starter.AlgemasDeContencao,
+
   /* Conjuration Spells - Advanced Spells */
+  CONJURACAO_AVANCADA: Glossary.ConjurationSpells.Advanced.ConjuracaoAvancada,
+  DUPLICAR: Glossary.ConjurationSpells.Advanced.Duplicar,
+  DUPLO_IMPACTO: Glossary.ConjurationSpells.Advanced.DuploImpacto,
+  CLONAGEM_DE_PROJETEIS: Glossary.ConjurationSpells.Advanced.ClonagemDeProjeteis,
+  ARMADURA_DE_ARCANO: Glossary.ConjurationSpells.Advanced.ArmaduraDeArcano,
+  PORTAL_MAGICO: Glossary.ConjurationSpells.Advanced.PortalMagico,
+  MANTO_ARCANO: Glossary.ConjurationSpells.Advanced.MantoArcano,
+
   /* Conjuration Spells - Archmage Spells */
+  MANIPULACAO_MAXIMA_CONJURACAO: Glossary.ConjurationSpells.Archmage.ManipulacaoMaximaConjuracao,
+  INVOCAR_GOLEM: Glossary.ConjurationSpells.Archmage.InvocarGolem,
 
   /* Runic Spells - Starter Spells */
+  TINTA_ARCANA: Glossary.RunicSpells.Starter.TintaArcana,
+  PAREDE_MAGICA: Glossary.RunicSpells.Starter.ParedeMagica,
+  ARMADILHA_ATRACAO: Glossary.RunicSpells.Starter.ArmadilhaAtracao,
+  CONEXAO_INVISIVEL: Glossary.RunicSpells.Starter.ConexaoInvisivel,
+  RUNA_GPS: Glossary.RunicSpells.Starter.RunaGps,
+  SENTINELA: Glossary.RunicSpells.Starter.Sentinela,
+  AURA_DE_EXPURGACAO: Glossary.RunicSpells.Starter.AuraDeExpurgacao,
+  SELO_DE_FECHADURAS: Glossary.RunicSpells.Starter.SeloDeFechaduras,
+
   /* Runic Spells - Advanced Spells */
+  RUNA_DE_FORTALECIMENTO: Glossary.RunicSpells.Advanced.RunaDeFortalecimento,
+  RUNA_DE_FRAGILIDADE: Glossary.RunicSpells.Advanced.RunaDeFragilidade,
+  EXTRACAO_ARCANA: Glossary.RunicSpells.Advanced.ExtracaoArcana,
+  RITUAL_DE_SELAMENTO: Glossary.RunicSpells.Advanced.RitualDeSelamento,
+  ARMADILHA_LAMINA: Glossary.RunicSpells.Advanced.ArmadilhaLamina,
+  ARMADILHA_EXPLOSAO: Glossary.RunicSpells.Advanced.ArmadilhaExplosao,
+  PROJECAO_ASTRAL: Glossary.RunicSpells.Advanced.ProjecaoAstral,
+
   /* Runic Spells - Archmage Spells */
+  RUNA_DE_PROTECAO: Glossary.RunicSpells.Archmage.RunaDeProtecao,
+  PORTAL_DE_RUNAS: Glossary.RunicSpells.Archmage.PortalDeRunas,
 
   /* Enchantment Spells - Starter Spells */
   ENGRANDECER: Glossary.EnchantmentSpells.Starter.Engrandecer,
