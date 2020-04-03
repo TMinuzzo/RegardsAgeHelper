@@ -23,20 +23,20 @@ const dictObj = {
   /* Races */
   HUMANO: {
     text: Glossary.Races.Humano,
-    img: Images.Races.HumanoSulista
+    img: Images.Races.HumanoSulista,
   },
   ORC: {
     text: Glossary.Races.Orc,
-    img: Images.Races.Orc
+    img: Images.Races.Orc,
   },
   LIZARDIO: {
     text: Glossary.Races.Lizardio,
-    img: Images.Races.Lizardio
+    img: Images.Races.Lizardio,
   },
   UNDERALL: Glossary.Races.Underall,
   TELNO: {
     text: Glossary.Races.Telno,
-    img: Images.Races.Telno
+    img: Images.Races.Telno,
   },
 
   /* Civilizations */
@@ -77,7 +77,7 @@ const dictObj = {
   MUSICA_PROFUNDA: Glossary.MusicalSpells.Starter.MusicaProfunda,
   CORDAS_HIPNOTICAS: Glossary.MusicalSpells.Starter.CordasHipnoticas,
   VIBRACAO_MUSICAL: Glossary.MusicalSpells.Starter.VibracaoMusical,
-  CANCAO_INSPIRADORA: Glossary.MusicalSpells.Starter.CancaoInspiradora,
+  CANCAO_INSPIRADORA: Glossary.MusicalSpells.StParter.CancaoInspiradora,
   RITMO_DESCONTROLADO: Glossary.MusicalSpells.Starter.RitmoDescontrolado,
   HARMONIA_TRANQUILIZADORA: Glossary.MusicalSpells.Starter.HarmoniaTranquilizadora,
 
@@ -91,6 +91,62 @@ const dictObj = {
   /* Musical Spells - Archmage Level */
   ORQUESTRA_DO_VENTRILOCO: Glossary.MusicalSpells.Archmage.OrquestraDoVentriloco,
   BRACOS_OITAVOS: Glossary.MusicalSpells.Archmage.BracosOitavos,
+
+  /* Druidic Spells - Starter Spells */
+  CONEXAO_DRUIDICA: Glossary.DruidicSpells.Starter.DruidicSpells,
+  FAMILIAR: Glossary.DruidicSpells.Starter.Familiar,
+  FORTALECER_NATUREZA: Glossary.DruidicSpells.Starter.FortalecerNatureza,
+  PACIFICAR: Glossary.DruidicSpells.Starter.Pacificar,
+  EXPOR_FRAQUEZA: Glossary.DruidicSpells.Starter.ExporFraqueza,
+  COMUNICACAO_SELVAGEM: Glossary.DruidicSpells.Starter.ComunicacaoSelvagem,
+
+  /* Druidic Spells - Advances Spells */
+  AGUCAR_VISAO: Glossary.DruidicSpells.Advanced.AgucarVisao,
+  AGUCAR_AUDICAO: Glossary.DruidicSpells.Advanced.AgucarAudicao,
+  AGUCAR_OLFATO: Glossary.DruidicSpells.Advanced.AgucarOlfato,
+  POSTURA_ANIMAL: Glossary.DruidicSpells.Advanced.PosturaAnimal,
+  ALMAS_GEMEAS: Glossary.DruidicSpells.Advanced.AlmasGemeas,
+  METAMORFOSE_FAMILIAR: Glossary.DruidicSpells.Advanced.MetamorfoseFamiliar,
+
+  /* Druidic Spells - Archmage Spells */
+  METAMORFOSE_DRUIDICA: Glossary.DruidicSpells.Archmage.MetamorfoseDruidica,
+  POSSESSAO: Glossary.DruidicSpells.Archmage.Possessao,
+
+  /* Conjuration Spells - Starter Spells */
+  /* Conjuration Spells - Advanced Spells */
+  /* Conjuration Spells - Archmage Spells */
+
+  /* Runic Spells - Starter Spells */
+  /* Runic Spells - Advanced Spells */
+  /* Runic Spells - Archmage Spells */
+
+  /* Enchantment Spells - Starter Spells */
+  ENGRANDECER: Glossary.EnchantmentSpells.Starter.Engrandecer,
+  SELAMENTO_DE_PORTAL: Glossary.EnchantmentSpells.Starter.SelamentoDePortal,
+  MALDICAO_AZAR: Glossary.EnchantmentSpells.Starter.MaldicaoAzar,
+  MALDICAO_ANTISSOCIAL: Glossary.EnchantmentSpells.Starter.MaldicaoAntissocial,
+  MALDICAO_INSONIA: Glossary.EnchantmentSpells.Starter.Maldicaoinsonia,
+  MALDICAO_MENTE_POBRE: Glossary.EnchantmentSpells.Starter.MaldicaoMentePobre,
+  SEDUCAO: Glossary.EnchantmentSpells.Starter.Seducao,
+  RAIO_DESGOURMETIZADOR: Glossary.EnchantmentSpells.Starter.RaioDesgourmetizador,
+  ELASTICAR: Glossary.EnchantmentSpells.Starter.Elasticar,
+  MALDICAO_PARANOIA: Glossary.EnchantmentSpells.Starter.MaldicaoParanoia,
+  MALDICAO_ANALFABETISMO: Glossary.EnchantmentSpells.Starter.MaldicaoAnalfabetismo,
+
+  /* Enchantment Spells - Advances Spells */
+  ENFEITICAR: Glossary.EnchantmentSpells.Advanced.Enfeiticar,
+  MALDICAO_EXAUSTAO: Glossary.EnchantmentSpells.Advanced.MaldicaoExaustao,
+  MALDICAO_TROCA_DE_SEXO: Glossary.EnchantmentSpells.Advanced.MaldicaoTrocaDeSexo,
+  PACTO_COMPARTILHAR_SENTIMENTOS: Glossary.EnchantmentSpells.Advanced.PactoCompartilharSentimentos,
+  GRAVIDADE_DINAMICA: Glossary.EnchantmentSpells.Advanced.GravidadeDinamica,
+  TORNAR_ETEREO: Glossary.EnchantmentSpells.Advanced.TornarEtereo,
+  PACTO_TROCA_DE_CORPO: Glossary.EnchantmentSpells.Advanced.PactoTrocaDeCorpo,
+  ULTIMO_SUSPIRO: Glossary.EnchantmentSpells.Advanced.UltimoSuspiro,
+
+  /* Enchantment Spells - Archmage Spells */
+  DESACELERACAO_TEMPORAL: Glossary.EnchantmentSpells.Archmage.DesaceleracaoTemporal,
+  ATORMENTAR_PENSAMENTOS: Glossary.EnchantmentSpells.Archmage.AtormentarPensamentos,
+  ACAO_INVOLUNTARIA: Glossary.EnchantmentSpells.Archmage.AcaoInvoluntaria,
 
   /* Plants */
   FLOUREN: Glossary.Plants.Flouren,
@@ -129,7 +185,7 @@ const dictObj = {
   UNMORTALIS: Glossary.Potions.Unmortalis,
   OILIS: Glossary.Potions.Oilis,
   HEALING_POTION: Glossary.Potions.HealingPotion,
-  HUMANTRI: Glossary.Potions.Humantri
+  HUMANTRI: Glossary.Potions.Humantri,
 };
 
 module.exports = dictObj;
