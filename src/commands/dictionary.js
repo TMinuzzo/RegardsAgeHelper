@@ -1,5 +1,5 @@
-const dictObj = require("./dictObject.js");
-const utils = require("./utils");
+const dictObj = require("../dictObject.js");
+const utils = require("../utils");
 
 function matchMeaning(args) {
   let arg = utils.normalizeString(args);

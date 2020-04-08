@@ -3,7 +3,8 @@ const Discord = require("discord.js");
 require("dotenv").config();
 
 /* External files */
-const matchMeaning = require("./dictionary.js");
+const matchMeaning = require("./commands/dictionary.js");
+const list = require("./commands/list.js");
 
 const client = new Discord.Client();
 client.on("ready", () => {
@@ -34,9 +35,21 @@ client.on("message", (msg) => {
           .catch(console.error);
       }
     }
+    if (cmd === "list") {
+      // list atributos
+      // list raças
+      // list civilizações
+      // list feitiços/spells/magias
+      //  - List all school spells: Geral, musical, druidico, conjuracao, runico, encantamento
+      // list plantas
+      // list pocoes/alquimia
+      let response = list(args);
+    }
     if (cmd === "help") {
       let msgEmbed = new Discord.MessageEmbed();
-      msg.channel.send("!dict <nome_da_verbete>: Retorna uma descrição daquilo que está sendo pesquisado, como um dicionário!");
+      msgEmbed.setTitle("Bem vindo ao RegardsAgeHelper!");
+      msgEmbed.setDescription("descreva o que quer fazer");
+      msg.channel.send(msgEmbed);
     }
 
     if (msg.content === "!ping") {

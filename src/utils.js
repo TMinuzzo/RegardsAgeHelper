@@ -4,7 +4,7 @@ const unorm = require("unorm");
 function didYouMean(arg, dictObj) {
   let smallerDistance = 1000;
   let result;
-  Object.keys(dictObj).forEach(key => {
+  Object.keys(dictObj).forEach((key) => {
     let dist = levenshtein(arg, key);
     if (dist < smallerDistance) {
       result = [key];
@@ -18,6 +18,10 @@ function didYouMean(arg, dictObj) {
 
 function normalizeString(args) {
   let arg = args.join("_").toUpperCase();
+  return normalizeWord(arg);
+}
+
+function normalizeWord(arg) {
   let combining = /[\u0300-\u036F]/g;
   arg = unorm.nfd(arg).replace(combining, "");
   return arg;
@@ -25,5 +29,6 @@ function normalizeString(args) {
 
 module.exports = {
   didYouMean,
-  normalizeString
+  normalizeString,
+  normalizeWord,
 };
