@@ -9,7 +9,7 @@ const client = new Discord.Client();
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
-client.on("message", msg => {
+client.on("message", (msg) => {
   if (msg.content.substring(0, 1) == "!") {
     let args = msg.content.substring(1).split(" ");
     let cmd = args[0];
@@ -34,6 +34,11 @@ client.on("message", msg => {
           .catch(console.error);
       }
     }
+    if (cmd === "help") {
+      let msgEmbed = new Discord.MessageEmbed();
+      msg.channel.send("!dict <nome_da_verbete>: Retorna uma descrição daquilo que está sendo pesquisado, como um dicionário!");
+    }
+
     if (msg.content === "!ping") {
       msg.channel.send("teste", msgEmbed);
       msg.reply("Pong!");

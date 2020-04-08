@@ -4,8 +4,8 @@
     "description": "A discord bot with some helper functionalities about the Regards Age system",
     "main": "main.js",
     "scripts": {
-        "start": "node main.js",
-        "dev": "nodemon main.js",
+        "start": "node ./src/main.js",
+        "dev": "nodemon ./src/main.js",
         "build": "babel --presets es2015 -d lib/ src"
     },
     "author": "Thayna Minuzzo",

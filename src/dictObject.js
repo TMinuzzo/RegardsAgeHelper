@@ -77,7 +77,7 @@ const dictObj = {
   MUSICA_PROFUNDA: Glossary.MusicalSpells.Starter.MusicaProfunda,
   CORDAS_HIPNOTICAS: Glossary.MusicalSpells.Starter.CordasHipnoticas,
   VIBRACAO_MUSICAL: Glossary.MusicalSpells.Starter.VibracaoMusical,
-  CANCAO_INSPIRADORA: Glossary.MusicalSpells.StParter.CancaoInspiradora,
+  CANCAO_INSPIRADORA: Glossary.MusicalSpells.Starter.CancaoInspiradora,
   RITMO_DESCONTROLADO: Glossary.MusicalSpells.Starter.RitmoDescontrolado,
   HARMONIA_TRANQUILIZADORA: Glossary.MusicalSpells.Starter.HarmoniaTranquilizadora,
 
