@@ -9,8 +9,14 @@ function list(args) {
     case "atributo":
     case "atributos":
       let attributes = glossary.Attributes;
-      console.log("attributes", attributes);
-      break;
+      attributes = Object.keys(attributes);
+      let msgReturn = {
+        title: "Atributos",
+        content: attributes,
+        textInitial: "Existem 11 atributos presentes no universo do Regards Age:",
+        textFinal: "Para saber mais sobre algum deles, use o dicionário! 📖 \n !dict <nomeDaVerbete>",
+      };
+      return msgReturn;
     case "feitico":
     case "feiticos":
     case "magias":

@@ -2,6 +2,9 @@ const Discord = require("discord.js");
 
 require("dotenv").config();
 
+//TODO: change the URL images to 	.attachFiles(['../assets/discordjs.png'])
+//	.setImage('attachment://discordjs.png');
+
 /* External files */
 const matchMeaning = require("./commands/dictionary.js");
 const list = require("./commands/list.js");
@@ -44,6 +47,16 @@ client.on("message", (msg) => {
       // list plantas
       // list pocoes/alquimia
       let response = list(args);
+      msgEmbed.setTitle(response.title);
+      msgEmbed.setColor("#0099ff");
+      msgEmbed.addField(response.textInitial, response.content);
+      msgEmbed.addField("Precisa de ajuda? ", response.textFinal);
+      //msgEmbed.setDescription(response.content);
+
+      msg.channel
+        .send(msgEmbed)
+        .then(() => console.log(`Sent a reply to ${msg.author.username}`))
+        .catch(console.error);
     }
     if (cmd === "help") {
       let msgEmbed = new Discord.MessageEmbed();
