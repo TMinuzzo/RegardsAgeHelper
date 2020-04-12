@@ -39,13 +39,6 @@ client.on("message", (msg) => {
       }
     }
     if (cmd === "list") {
-      // list atributos
-      // list raças
-      // list civilizações
-      // list feitiços/spells/magias
-      //  - List all school spells: Geral, musical, druidico, conjuracao, runico, encantamento
-      // list plantas
-      // list pocoes/alquimia
       let response = list(args);
       msgEmbed.setTitle(response.title);
       msgEmbed.setColor("#0099ff");
