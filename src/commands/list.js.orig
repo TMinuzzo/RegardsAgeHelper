@@ -1,4 +1,5 @@
 const utils = require("../utils");
+const dictObj = require("../dictObject.js");
 const glossary = require("../glossary.js");
 
 function list(args) {
@@ -17,7 +18,7 @@ function list(args) {
     content: null,
     textInitial: null,
     textFinal:
-      "Para saber mais sobre algum deles, use o dicionário! 📖 \n !dict <nome_da_verbete> \n Você também pode usar a opção -d para obter mais detalhes: !list -d <verbete>",
+      "Para saber mais sobre algum deles, use o dicionário! 📖 \n !dict <nomeDaVerbete> \n Você também pode usar a opção -d para obter mais detalhes: !list -d <verbete>",
   };
   switch (normalizedArgs[0]) {
     case "atributo":
@@ -28,6 +29,9 @@ function list(args) {
         title: "Atributos",
         content: attributes,
         textInitial: "Existem 11 atributos presentes no universo do Regards Age:",
+<<<<<<< HEAD
+        textFinal: "Para saber mais sobre algum deles, use o dicionário! 📖 \n !dict <nome_da_verbete>",
+=======
         textFinal: msgReturn.textFinal,
       };
       return msgReturn;
@@ -39,6 +43,7 @@ function list(args) {
         content: racas,
         textInitial: "Existem 10 raças presentes no universo do Regards Age:",
         textFinal: msgReturn.textFinal,
+>>>>>>> 1c5d59426c783aa6b3cdc2952d32d00e164f23eb
       };
       return msgReturn;
     case "feitico":
