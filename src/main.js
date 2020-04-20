@@ -42,7 +42,7 @@ client.on("message", (msg) => {
     if (cmd === "list") {
       let response = list(args);
       msgEmbed.setTitle(response.title);
-      msgEmbed.setColor("#0099ff");
+      msgEmbed.setColor("#ff0000");
       msgEmbed.addField(response.textInitial, response.content);
       msgEmbed.addField("Precisa de ajuda? ", response.textFinal);
       //msgEmbed.setDescription(response.content);
@@ -56,6 +56,7 @@ client.on("message", (msg) => {
       let msgEmbed = new Discord.MessageEmbed();
       msgEmbed.setTitle("Bem vindo ao RegardsAgeHelper!");
       msgEmbed.setDescription("descreva o que quer fazer");
+      msgEmbed.setColor("#ff0000");
       msg.channel.send(msgEmbed);
     }
 
