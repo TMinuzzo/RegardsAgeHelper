@@ -1,17 +1,27 @@
 const Images = {
   Races: {
-    HumanoSulista:
-      "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/7e8f635d-d4c4-4733-ab0f-8614938a2aa9/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200408%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200408T184035Z&X-Amz-Expires=86400&X-Amz-Signature=b308ddad3283d5d28eff6bcc0566f81a90a8a5f1232f16ca6d333d7c14babd67&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22",
-    HumanoZardieno:
-      "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c39e1efb-ff5a-4562-8cbd-17f882a1eba1/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAT73L2G45OFNGKYEM%2F20200330%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200330T205734Z&X-Amz-Expires=86400&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQDXdvuuuPRPk7v166mxcwnHtoYaFzX%2FNnI69M%2B5ORzuqQIgAYkY%2FHMlsNQ3GAFgoY%2Fccfhp9cHduXjF9bxoyBM8%2B14qvQMI9f%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgwyNzQ1NjcxNDkzNzAiDMWXiAR%2FMt5CwPtwpSqRA40dQH8ROL5b61VzJSGY6PP6Dt6lcc9d7L1sOSrsjCQl6ofGisfpIYQn2LA7W4mPX1Xli8tUY2gQQ%2BY2sUb8n%2FO1hRQK4Gs%2FmxoduQbl9EykcZooScKWlkHgzLdHSuKgKphnLWI1I2v3DgWfsjDDX%2FV4IltFgABdkdnqqvvJKsZAbZpbjFXC%2FRTddsVLPiJNxlJo2apNkD7ZwZL59nnLFOyf%2BcVIKk9bumIc9HsH1wUtxeYZaipRH0UEP0V8nSY01Qdg83U8QFxgRsEu%2BOhYuZCMED5JAljxJj7O4Qy6u6R7QqWZQHpkOmWYp%2FLitSGwajwovwNmQ%2Fh2KdbV1LmSJYYWxMDmzLl5KCBZvhV4T3pYIZeTuKjZo1%2F4GU%2F1KeN1%2Bh%2BnjE7BlK2rjeftWdD797GMmt%2Fv2OxOok3VOXjFDIOZeDv1gMokYFXtQ5DGGqx%2FDTOuPyTmVUTyhw8NaRdbKw0LxOnzKVvq8c5nh%2B20gusFBK1B%2FWMLHeXAtmTkeRFaZ7%2BZaN9w9mAowEsq%2F7LSfTEBMM%2BYifQFOusBgUdPVQLTnXcrNtqH07wG1E0biOZjiyxeX6mIHc8I7fTwThi3lCT4OaT1MIqIc0EZKqg2J953ex%2FIrDwG0aLHJ7oIt3la5FgtccA6K0pmzvomP5K1CwIC9Po4QCxtbPAA8yI6Muq6NaP6RV3RkcSb%2BqZYBxsY9id7YMhKkLbQofrbDu8LEvozKNN6Q46BKXwl77IWbU77EsuF9rvO3g%2FN3gN%2BP0P6xPbXGa3BBsRlUiyhcQaHHWjPrazvD2jVqHoIbIq5Ds2knuLSzA%2FkGvdBFkrDbUAhMQe91VkfVSPSEGba1NGJDxCA6lvlnw%3D%3D&X-Amz-Signature=b7bf80dcd4a6514262a6706c8e090a9a37d2ed94a2e701fe080196a851a1c6cd&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22",
-    HumanoNortenho:
-      "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b1671508-3949-4efd-8d7b-9bfdeec7c05c/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAT73L2G45MKAPFHEB%2F20200330%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200330T205823Z&X-Amz-Expires=86400&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQDr5KgE5jXHN1wSZ9tBGt%2B%2Blbq9K7zSh4dK3zqTAOCdoAIgIJRH3%2BcKcB%2BDdO%2BYf45mNyWVmC1epzN7rRJe4ZasnY8qvQMI8v%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgwyNzQ1NjcxNDkzNzAiDHTN0PPF4s5HngsqCyqRA8qoadjbTktx8QVZaxuTHVPCiVbaNNkv33KxqscdRaADqb7nfvSPswVz0BgIW2mpEE3E5fF7s985bh6P2mvFH3fMhbA1QlMtESePNFT7OxzKOqYIMxCy3Sngs%2FiWsWGwV%2BPBiDB1wtRcZzpF3MdllvEpA5iNiSWJ%2Bj8LZJUrXa35agQWgEc1cCueU6eO72y0VyKjHqFpPjPo2qtuWM0v4WB3jboHnFLtbcNHr5JdxNBF4%2FwmW73YUn6SRvHFfLXtsyS6u6djnlhEHVH7fi81iS8f4Luqil%2Fa8WCZaHEqibLiKm9CLQ9QgKk3m14Y6nu4fVU7%2F3Hy0i3dM3TuC0CJ4v%2BaZEQr9MI7nGBsjg0lK70HDrIOi3XksC53m7vNoOaBGSNF6aL3kfCcaERSHvpHvvYhmiTqbiqbR%2FGGKO3Ez5bBe8KRD3%2Fhy5rLUZTyC7afjUtcnDGYGFC64TRu3WzluVxW9tE7udD2QyosofNz78t31eKUeEm3B6lHr2iLZZvCzHvByaby1RpEfexykpLHTyFqMJq7iPQFOusBWLzjBHQ31fK%2BrErMglf07BHgOdIZuU47r3k6ZyKZpfHDLEFNdC5939%2F2gPw9p%2FnC21uq9aDGiC4%2FX5PQuY6ErXZ9n6a4X6lf7AklQEC323a9ElLtB1DRm1az7hs7lABjJ0xlQXpdGCWwWLwNK7m666B3oGGuypNn%2FaBrHAHVDCwlKFFgr0%2FoLLaUKulXWSHfoV1gBAV8HB79uAn4avXbaklBK6b0CxNyRYMMg5WZB%2B6kgKnIxaDrU92rgdxcUrRMH%2FYAugXbWvoF29s%2BjJsoP4vfJeLzQl8GWYQoTXjKFJ3LtLnbH%2BBka5QHQA%3D%3D&X-Amz-Signature=860acf0abc6b39e71f8e4579ec24acad83c0feffcf4b8fdda916e80c7889432d&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22",
-    Orc:
-      "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/8e552b8e-3f11-43e9-a976-83c521cdebe0/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200330%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200330T214752Z&X-Amz-Expires=86400&X-Amz-Signature=eb23fe6db675a08be1f67886e101f4a99f7ffe7590c8d224b2fd2ec5b5b74d1b&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22",
-    Lizardio:
-      "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e38cb6d9-5967-46e3-b111-67d3e69bf47c/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200330%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200330T215130Z&X-Amz-Expires=86400&X-Amz-Signature=908e351fd4c44d70ae349368e39072959dd743177f4f0e8cb15d72f28d79890c&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22",
-    Telno:
-      "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f4d26d87-c078-4d5e-b3a9-876228c85534/telno_2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200330%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200330T215224Z&X-Amz-Expires=86400&X-Amz-Signature=4f99662996d41c101499242a202fb65cd6f7f8aef7fd4ef8eb9e06744d9574c8&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22telno_2.png%22",
+    HumanoSulista: './public/images/sulista.png',
+    HumanoZardieno: './public/images/zard.png',
+    HumanoNortenho: './public/images/nort.png',
+    Orc: './public/images/orc.png',
+    OrcAbencoado: './public/images/orc_aben.png',
+    OrcMestico: './public/images/orc_mes.png',
+    Lizardio: './public/images/lizar1.png',
+    Lizardio2: './public/images/lizar2.png',
+    Telno: './public/images/telno1.png',
+    Telno2: './public/images/telno2.png',
+    Gnomo1: './public/images/gnomo1.png',
+    Gnomo2: './public/images/gnomo2.png',
+    Raven: './public/images/raven1.png',
+    Raven2: './public/images/raven2.png',
+    Songster: './public/images/songs1.png',
+    Songster2: './public/images/songs2.png',
+    Griffin1: './public/images/griffin1.jpg',
+    Griffin2: './public/images/griffin2.png',
+    DragaoLuz: './public/images/dragaoluz.jpg',
+    DragaoFrio: './public/images/dragaoFrio.jpg',
+    DragaoFogo: './public/images/dragaofogo.jpg',
+    DragaoTrevas: './public/images/dragaotrevas.jpg',
   },
 };
 

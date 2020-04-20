@@ -23,21 +23,38 @@ const dictObj = {
   /* Races */
   HUMANO: {
     text: Glossary.Races.Humano,
-    img: Images.Races.HumanoSulista,
+    img: [Images.Races.HumanoSulista, Images.Races.HumanoZardieno, Images.Races.HumanoNortenho],
   },
   ORC: {
     text: Glossary.Races.Orc,
-    img: Images.Races.Orc,
+    img: [Images.Races.Orc, Images.Races.OrcAbencoado, Images.Races.OrcMestico],
   },
   LIZARDIO: {
     text: Glossary.Races.Lizardio,
-    img: Images.Races.Lizardio,
+    img: [Images.Races.Lizardio, Images.Races.Lizardio2],
   },
   UNDERALL: Glossary.Races.Underall,
   TELNO: {
     text: Glossary.Races.Telno,
-    img: Images.Races.Telno,
+    img: [Images.Races.Telno, Images.Races.Telno2],
   },
+  GNOMO: {
+    text: Glossary.Races.Gnomo,
+    img: [Images.Races.Gnomo1, Images.Races.Gnomo2],
+  },
+  DRAGAO: {
+    text: Glossary.Races.Dragao,
+    img: [Images.Races.DragaoFogo, Images.Races.DragaoFrio, Images.Races.DragaoLuz, Images.Races.DragaoTrevas],
+  },
+  GRIFFIN: {
+    text: Glossary.Races.Griffin,
+    img: [Images.Races.Griffin1, Images.Races.Griffin2],
+  },
+  RAVEN: {
+    text: Glossary.Races.Raven,
+    img: [Images.Races.Raven, Images.Races.Raven2],
+  },
+
 
   /* Civilizations */
   NORDICO: Glossary.Civilizations.Nordico,

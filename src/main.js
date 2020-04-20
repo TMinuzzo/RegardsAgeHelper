@@ -25,7 +25,8 @@ client.on("message", (msg) => {
       let response = matchMeaning(args);
       if (response.img) {
         // here we have a text with an image
-        msgEmbed.setImage(response.img);
+        //msgEmbed.setImage(response.img);
+        msgEmbed.attachFiles(response.img);
         msg.channel
           .send(response.text, msgEmbed)
           .then(() => console.log(`Sent a reply to ${msg.author.username}`))

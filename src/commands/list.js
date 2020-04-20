@@ -14,7 +14,7 @@ function list(args) {
         title: "Atributos",
         content: attributes,
         textInitial: "Existem 11 atributos presentes no universo do Regards Age:",
-        textFinal: "Para saber mais sobre algum deles, use o dicionário! 📖 \n !dict <nomeDaVerbete>",
+        textFinal: "Para saber mais sobre algum deles, use o dicionário! 📖 \n !dict <nome_da_verbete>",
       };
       return msgReturn;
     case "feitico":
