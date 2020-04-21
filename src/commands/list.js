@@ -51,7 +51,7 @@ function list(args) {
         textFinal: msgReturn.textFinal,
       };
       return msgReturn;
-    case "pocoes":
+    case "pocao":
     case "pocoes":
       let pocoes = glossary.Potions;
       pocoes = Object.keys(pocoes);

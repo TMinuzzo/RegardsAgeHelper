@@ -2,9 +2,6 @@ const Discord = require("discord.js");
 
 require("dotenv").config();
 
-//TODO: change the URL images to 	.attachFiles(['../assets/discordjs.png'])
-//	.setImage('attachment://discordjs.png');
-
 /* External files */
 const matchMeaning = require("./commands/dictionary.js");
 const list = require("./commands/list.js");
@@ -55,7 +52,9 @@ client.on("message", (msg) => {
     if (cmd === "help") {
       let msgEmbed = new Discord.MessageEmbed();
       msgEmbed.setTitle("Bem vindo ao RegardsAgeHelper!");
-      msgEmbed.setDescription("descreva o que quer fazer");
+      msgEmbed.setDescription("O comando `list` pode ser usado para listar verbetes, como feitiços, raças, etc. \n O comando `dict` pode ser usado para verificar uma definição.");
+      msgEmbed.addField("list", "Digite `!list <nome_do_conjunto>` para obter listas. Ou `!list -d <nome_do_conjunto>` para listas detalhadas.\n Exemplo: `!list POÇÕES`");
+      msgEmbed.addField("dict", "Digite `!dict <nome_da_verbete>` para uma definição e/ou imagens. \n Exemplo: `!dict TRUTUM`");
       msgEmbed.setColor("#ff0000");
       msg.channel.send(msgEmbed);
     }
